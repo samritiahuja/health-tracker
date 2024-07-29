@@ -1,0 +1,17 @@
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  button {
+    align-self: flex-start;
+  }
+  

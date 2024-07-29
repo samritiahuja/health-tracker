@@ -1,0 +1,28 @@
+<form (ngSubmit)="addWorkout()" class="flex items-center justify-center">
+  <div class=" gap-2 mt-10 ">
+    <div class="flex flex-col bg-gray-100 w-40 justify-center items-center rounded-md">
+      <label class="pt-2" for="name">Name:</label>
+      <input class="border-b-2 border-b-gray-600 bg-gray-100 w-full rounded-md x "type="text" id="name" [(ngModel)]="name" name="name" autofocus required>
+    </div>
+    <div class="flex m-auto gap-5  justify-center items-center mt-10">
+      
+      <div class="flex flex-col  bg-gray-100 w-40 justify-center items-center rounded-md">
+        <label class="pt-2" for="workoutType">Workout Type:</label>
+        <input class="bg-gray-100 w-full border-b-2 border-b-gray-600 rounded-md" type="text" id="workoutType" [(ngModel)]="workoutType" name="workoutType" required>
+      </div>
+      <div class="flex flex-col  bg-gray-100 w-40 justify-center items-center rounded-md">
+        <label class="pt-2" for="workoutMinutes">Workout Minutes:</label>
+        <input class="bg-gray-100 w-full border-b-2 border-b-gray-600 rounded-md" type="number" id="workoutMinutes" [(ngModel)]="workoutMinutes" name="workoutMinutes" required>
+      </div>
+
+    </div>
+    
+
+  </div>
+  
+  
+
+
+  
+  <button class="mx-auto bg-gray-50 px-3 py-1 rounded-md mb-10 font-bold text-blue-600" type="submit">Add Workout</button>
+</form>
